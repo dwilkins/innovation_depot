@@ -1,4 +1,18 @@
-- @spaces.each do |space|
-	%p
-		= space.suite
-		= space.office_type
+%table.table.table-bordered
+	%thead
+		%tr
+			%th Suite #
+			%th Fume Hoods
+			%th Type
+			%th Square Feet
+			%th Rental Rate
+			%th Tenant
+	%tbody
+	- @spaces.each do |space|
+		%tr
+			%td= space.suite
+			%td= space.fume_hoods
+			%td= space.office_type
+			%td= space.square_ft
+			%td= space.rental_rate
+			%td= space.tenant
