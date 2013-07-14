@@ -1,0 +1,22 @@
+%h1 New Space
+
+= form_for @space do |f|
+	= f.label :suite
+	= f.text_field :suite
+	%br
+	= f.label :office_type
+	= f.text_field :office_type
+	%br
+	= f.label :square_ft
+	= f.text_field :square_ft
+	%br
+	= f.label :rental_rate
+	= f.text_field :rental_rate
+	%br
+	= f.label :tenant
+	= f.text_field :tenant
+	%br
+	= f.label :lookup
+	= f.text_field :lookup
+	%br
+	= f.submit
